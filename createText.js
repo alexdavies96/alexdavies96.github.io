@@ -1,17 +1,20 @@
+'use strict'
 function make(){
     //window.alert("hello");
-    var newParagraph = document.createElement('p');
-    newParagraph.id = "paragraph";
-    document.getElementById("paragraph").innerHTML = "this is a paragraph";
-    document.getElementsByTagName('thisbody')[0].appendChild(p1);
+    let para = document.createElement("p");
+    para.id="paragraphNew"
+    let node = document.createTextNode("This is new.");
+    para.appendChild(node);
+    let element = document.getElementById("div1");
+    element.appendChild(para);
 }
 
 function change(){
-    let input = document.getElementById("create").value;
-    
-    document.getElementById("paragraph").innerHTML = input;
+    let input = document.getElementById("input").value;
+    document.getElementById("paragraphNew").innerHTML = input;
 }
 
 function deleteParagraph(){
-    document.getElementById("newPara").deleteParagraph;
+    let x = document.getElementById("paragraphNew");
+    x.remove(x.selectedIndex);
 }

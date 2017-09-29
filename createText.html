@@ -23,7 +23,7 @@
     <script src="createText.js" type="text/javascript"></script>
   </head>
 
-  <body>
+  <body id="thisbody">
     <!-- Navigation -->
     <a id="menu-toggle" href="index.html" class="btn btn-dark btn-lg toggle">Home!</a>
     
@@ -42,8 +42,8 @@
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
-                        <input id="create" type="text">
+        <div class="container" id="div1">
+                        <input id="input" type="text">
                         <input type="button" value="Create!" onclick="make()">
                         <input type="button" value="Change!" onclick="change()">
                         <input type="button" value="Delete!" onclick="deleteParagraph()">
