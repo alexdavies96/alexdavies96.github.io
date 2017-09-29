@@ -1,11 +1,98 @@
 <html>
-        <!-- Custom CSS -->
-        <link href="css/stylish-portfolio.css" rel="stylesheet">
+            <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <body>
+            <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+                <i class="fa fa-bars"></i>
+              </a>
+              <nav id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                  <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+                    <i class="fa fa-times"></i>
+                  </a>
+                  <li class="sidebar-brand">
+                    <a class="js-scroll-trigger" href="#top">Alex Davies</a>
+                  </li>
+                  <li>
+                    <a class="js-scroll-trigger" href="#top">Home</a>
+                  </li>
+                  <li>
+                    <a class="js-scroll-trigger" href="#about">About</a>
+                  </li>
+                  <li>
+                    <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="js-scroll-trigger" href="#contact" onclick=$()"#menu-close".click();>Contact</a>
+                  </li>
+                </ul>
+              </nav>
+
             <script src="createText.js" type="text/javascript"></script>            
             <input id="create" type="text">
             <input type="button" value="Create!" onclick="make()">
             <input type="button" value="Change!" onclick="change()">
             <input type="button" value="Delete!" onclick="deleteParagraph()">
-    </body>
+    <!-- Footer -->
+    <footer>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-10 mx-auto text-center">
+                      <h4>
+                        <strong>Alex Davies</strong>
+                      </h4>
+                      <p>35 St Marys Road
+                        <br>Glossop, SK13 8DN</p>
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="fa fa-phone fa-fw"></i>
+                          07964095377</li>
+                        <li>
+                          <i class="fa fa-envelope-o fa-fw"></i>
+                          <a href="Alexander.Davies@qa.com">Alexander.Davies@qa.com</a>
+                        </li>
+                      </ul>
+                      <br>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a href="#">
+                            <i class="fa fa-facebook fa-fw fa-3x"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#">
+                            <i class="fa fa-twitter fa-fw fa-3x"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#">
+                            <i class="fa fa-dribbble fa-fw fa-3x"></i>
+                          </a>
+                        </li>
+                      </ul>
+                      <hr class="small">
+                      <p class="text-muted">Copyright &copy; Alex Davies 2017</p>
+                    </div>
+                  </div>
+                </div>
+                <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+                  <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+                </a>
+              </footer>
+          
+              <!-- Bootstrap core JavaScript -->
+              <script src="vendor/jquery/jquery.min.js"></script>
+              <script src="vendor/popper/popper.min.js"></script>
+              <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+          
+              <!-- Plugin JavaScript -->
+              <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+          
+              <!-- Custom scripts for this template -->
+              <script src="js/stylish-portfolio.js"></script>
+          
+            </body>
+          
+          </html>
 </html>
