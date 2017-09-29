@@ -1,7 +1,3 @@
-window.onload = function(){
-
-}
-
 function inputOne(input) {
     document.getElementById("textField").innerHTML(input)
 }
