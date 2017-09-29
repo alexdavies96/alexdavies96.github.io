@@ -209,8 +209,8 @@ hr.small {
     margin: 0 auto;
 }
 
-.img-portfolioPhone:hover {
-    background-image:url('PhoneColour.paint'); 
+.portfolio-item:hover {
+    opacity: 0.5;
 }
 
 /* Call to Action */
