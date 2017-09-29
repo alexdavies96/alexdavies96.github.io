@@ -1,24 +1,21 @@
-let str="",x,y,a;
-function FizzBuzz() 
-{
-for (a=1;a<=100;a++)
-{
-    x = a%3 ==0;
-    y = a%5 ==0;
-    if(x)
+function FizzBuzz(){
+    let FizzBuzzArray = [];
+    let Buzz = "Buzz";
+    let Fizz = "Fizz";
+    for (let i = 1; i <= 100; i++)
     {
-        str+="fizz"
+        if (i%3 === 0)
+        {
+            FizzBuzzArray[i]=Fizz;
+        }
+        else if (i%5 === 0)
+        {
+            FizzBuzzArray[i]=Buzz;
+        }
+        else
+        {
+            FizzBuzzArray[i] = i;
+        }
+        document.getElementById("FizzBuzz").innerHTML = FizzBuzzArray.join(" ")
     }
-    if (y)
-    {
-        str+="buzz"
-    }
-    if (!(x||y))
-    {
-        str+=a;
-    }
-    str+="\n"
-}
-console.log(str)
-return str;
 }
