@@ -53,10 +53,10 @@ function AddGarage()
                     p2.textContent = arrayCars[a].colour + "  ";
                     p3.textContent = arrayCars[a].reg + "  ";
                     p4.textContent = Fault;
-                    document.getElementById('portfolio')[0].appendChild(p1);
-                    document.getElementById('portfolio')[0].appendChild(p2);
-                    document.getElementById('portfolio')[0].appendChild(p3);  
-                    document.getElementById('portfolio')[0].appendChild(p4);
+                    document.getElementById("portfolio")[0].appendChild(p1);
+                    document.getElementById("portfolio")[0].appendChild(p2);
+                    document.getElementById("portfolio")[0].appendChild(p3);  
+                    document.getElementById("portfolio")[0].appendChild(p4);
                     let Make = arrayCars[a].make;
                     let Colour = arrayCars[a].colour;
                     let reg = arrayCars[a].reg;
