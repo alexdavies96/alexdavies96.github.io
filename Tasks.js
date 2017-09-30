@@ -139,7 +139,7 @@ function make(){
     var newParagraph = document.createElement('p');
     newParagraph.id = "paragraph";
     document.getElementById("paragraph").innerHTML = "this is a paragraph";
-    document.getElementsByTagName('thisbody')[0].appendChild(p1);
+    document.getElementById("portfolio").appendChild(p1);
 }
 
 function change(){
