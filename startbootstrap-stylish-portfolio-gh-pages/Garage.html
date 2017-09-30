@@ -44,36 +44,39 @@
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-                                        <h1>Add Car</h1>
-                                        <label>Make</label>
-                                        <input Type = "text" id = "make">    
-                                        <label>Colour</label>
-                                        <input Type = "text" id = "colour">
-                                        <label>Reg</label>
-                                        <input Type = "text" id = "reg">
-                                        <input Type = "button" id = "AddButton" value = "Add" onclick = "addCar()">
+              <h1>Add Car</h1>
+              <label>Make</label>
+              <input Type = "text" id = "make">    
+              <label>Colour</label>
+              <input Type = "text" id = "colour">
+              <label>Reg</label>
+              <input Type = "text" id = "reg">
+              <input Type = "button" id = "AddButton" value = "Add" onclick = "addCar()">
                                 
-                                        <h1>Garage Check In</h1>
-                                        <select id ="carList" class="dropbtn">
-                                                <option value="Select Car">Select Car</option>
-                                        </select>
-                                        <select id = "faultList" class="dropbtn">
-                                                <option id = "fault1" value="Select Faults">Select Faults</option>
-                                                <option id = "fault2" value="Flat Tyre">Flat Tyre</option>
-                                                <option id = "fault3" value="Paint Job">Paint Job</option>
-                                                <option id = "fault4" value="Dent">Dent</option>
-                                                <option id = "fault5" value="Clutch">Clutch</option>
-                                                <option id = "fault6" value="Gear Box">Gear Box</option>                
-                                        </select>
-                                        <input Type = "button" id = "AddCarGarage" value = "Submit" onclick = "AddGarage()">        
-                                        <p id = "paragraph"></p>
-                                        <h1>Garage Check Out</h1>
-                                        <select id = "carListGarage" class="dropbtn" onselect = "total()">
-                                                <option value="Select Car">Select Car</option>
-                                        </select>
-                                        <input Type = "button" id = "Select Car" value = "Select" onclick = "total()">
-                                        <input Type = "text" id = "Total" value = "Total">
-                                        <input Type = "button" id = "CheckOutCar" value = "Submit" onclick = "OutGarage()">  
+              <h1>Garage Check In</h1>
+              <select id ="carList" class="dropbtn">
+              <option value="Select Car">Select Car</option>
+              </select>
+              <select id = "FaultAmmounts" class="dropbtn">
+              <option id = "select" value = "select">Select Faults</option>
+              <option id = "1" value="1">1</option>
+              <option id = "2" value="2">2</option>
+              <option id = "3" value="3">3</option>
+              <option id = "4" value="4">4</option>
+              <option id = "5" value="5">5</option>
+              <option id = "6" value="5">6</option>                
+              </select>
+              <select id = "faultList" class="dropbtn">              
+              </select>
+              <input Type = "button" id = "AddCarGarage" value = "Submit" onclick = "AddGarage()">        
+              <p id = "paragraph"></p>
+              <h1>Garage Check Out</h1>
+              <select id = "carListGarage" class="dropbtn" onselect = "total()">
+              <option value="Select Car">Select Car</option>
+              </select>
+              <input Type = "button" id = "Select Car" value = "Select" onclick = "total()">
+              <input Type = "text" id = "Total" value = "Total">
+              <input Type = "button" id = "CheckOutCar" value = "Check Out" onclick = "OutGarage()">  
             </div>
             <!-- /.row (nested) -->
           </div>

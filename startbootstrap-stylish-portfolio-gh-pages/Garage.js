@@ -36,9 +36,15 @@ function AddGarage()
         let p4 = document.createElement('h3');
 
         for (let a = 0; a < arrayCars.length; a++)
-        {        
+        {   
             if (CarReg.includes(arrayCars[a].reg))
             {
+                if (Fault === arrayCars[a].Fault)
+                {
+                    window.alert("Sorry you have already added that car with that fault.")
+                }
+                else if (arrayCars[a].Fault === null)
+                {
                     p1.textContent = arrayCars[a].make + "  ";
                     p2.textContent = arrayCars[a].colour + "  ";
                     p3.textContent = arrayCars[a].reg + "  ";
@@ -55,6 +61,14 @@ function AddGarage()
                     let option = document.createElement('option');
                     option.innerHTML = arrayCars[a].reg;
                     document.getElementById("carListGarage").appendChild(option);
+                }
+                else 
+                {
+                    p4.textContent = Fault; 
+                    document.getElementsByTagName('body')[0].appendChild(p4);
+                    arrayGarage.push(Fault);
+                }
+
             }
         } 
 }
