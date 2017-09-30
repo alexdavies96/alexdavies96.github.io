@@ -14,44 +14,44 @@ function importJSONfile()
     let requestData = request.response;
     let myh1 = document.createElement('h1');
     myh1.textContent = requestData['squadName'];
-    document.getElementsByTagName('body')[0].appendChild(myh1);
+    document.getElementsByTagName("portfolio").appendChild(myh1);
 
     let myh2 = document.createElement('h2');
     myh2.textContent = requestData['homeTown'];
-    document.getElementsByTagName('body')[0].appendChild(myh2);
+    document.getElementsByTagName("portfolio").appendChild(myh2);
 
     let myh3 = document.createElement('h3');
     myh3.textContent = requestData['formed'];
-    document.getElementsByTagName('body')[0].appendChild(myh3);
+    document.getElementsByTagName("portfolio").appendChild(myh3);
 
     let myh4 = document.createElement('h4');
     myh4.textContent = requestData['secretBase'];
-    document.getElementsByTagName('body')[0].appendChild(myh4);
+    document.getElementsByTagName("portfolio").appendChild(myh4);
 
     let myh5 = document.createElement('h5');
     myh5.textContent = requestData['active'];
-    document.getElementsByTagName('body')[0].appendChild(myh5);
+    document.getElementsByTagName("portfolio").appendChild(myh5);
 
     let brea = document.createElement('br');    
     for (let i = 0; i < requestData['members'].length; ++i) {
         let myh5 = document.createElement('h5');
         myh5.textContent =requestData['members'][i].name + " , ";
-        document.getElementsByTagName('body')[0].appendChild(myh5);
+        document.getElementsByTagName("portfolio").appendChild(myh5);
     }
     for (let j = 0; j < requestData['members'].length; ++j) {
         let myh6 = document.createElement('h6');
         myh6.textContent =requestData['members'][j].age + " , ";
-        document.getElementsByTagName('body')[0].appendChild(myh6);
+        document.getElementsByTagName("portfolio").appendChild(myh6);
     }
     for (let j = 0; j < requestData['members'].length; ++j) {
         let myh6 = document.createElement('h6');
         myh6.textContent =requestData['members'][j].secretIdentity + " , ";
-        document.getElementsByTagName('body')[0].appendChild(myh6);
+        document.getElementsByTagName("portfolio").appendChild(myh6);
     }
     for (let j = 0; j < requestData['members'].length; ++j) {
         let myh6 = document.createElement('h6');
         myh6.textContent =requestData['members'][j].powers + " , ";
-        document.getElementsByTagName('body')[0].appendChild(myh6);
+        document.getElementsByTagName("portfolio").appendChild(myh6);
     }
     }
 }
@@ -92,10 +92,10 @@ function SearchJSONFile()
             myh2.textContent =requestData[i].cty + " , ";
             myh3.textContent =requestData[i].hse + " , "; 
             myh4.textContent =requestData[i].yrs + " , ";            
-            document.getElementsByTagName('body')[0].appendChild(myh1);
-            document.getElementsByTagName('body')[0].appendChild(myh2);
-            document.getElementsByTagName('body')[0].appendChild(myh3);
-            document.getElementsByTagName('body')[0].appendChild(myh4);
+            document.getElementsByTagName("portfolio").appendChild(myh1);
+            document.getElementsByTagName("portfolio").appendChild(myh2);
+            document.getElementsByTagName("portfolio").appendChild(myh3);
+            document.getElementsByTagName("portfolio").appendChild(myh4);
         }
     }
 }
