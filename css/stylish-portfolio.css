@@ -217,6 +217,11 @@ hr.small {
 .call-to-action {
     padding: 30px 400px;
 }
+/* Call to Action */
+.call-to-action2 {
+    background: none;
+    padding: 30px 400px;
+}
 
 .call-to-action .btn {
     margin: 10px;
