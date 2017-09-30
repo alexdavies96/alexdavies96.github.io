@@ -13,14 +13,20 @@ function addCar()
         window.alert("Please enter details!");
     }
     let option = document.createElement('option');
+    option.id = "carListOption";
     option.innerHTML = reg;
     document.getElementById("carList").appendChild(option);
     let a = {make, colour, reg};
     arrayCars.push(a);
+    document.getElementById("make").value = "";
+    document.getElementById("colour").value = "";
+    document.getElementById("reg").value = "";
 }
 
 function AddGarage()
 {
+    let colour = document.getElementById("colour").value;
+    let reg = document.getElementById("reg").value;
     let List = document.getElementById("carList");
     let CarReg = List.options[List.selectedIndex].value;
     let List2 = document.getElementById("faultList");
@@ -31,28 +37,26 @@ function AddGarage()
         window.alert("Please select a car and fault from the menu!");
     }
         let p1 = document.createElement('h3');
+        p1.id = "para1";
         let p2 = document.createElement('h4');
-        let p3 = document.createElement('h4'); 
+        p2.id = "para2";
+        let p3 = document.createElement('h4');
+        p3.id = "para3";
         let p4 = document.createElement('h3');
+        p4.id = "para4";
 
         for (let a = 0; a < arrayCars.length; a++)
         {   
             if (CarReg.includes(arrayCars[a].reg))
             {
-                if (Fault === arrayCars[a].Fault)
-                {
-                    window.alert("Sorry you have already added that car with that fault.")
-                }
-                else if (arrayCars[a].Fault === null)
-                {
                     p1.textContent = arrayCars[a].make + "  ";
                     p2.textContent = arrayCars[a].colour + "  ";
                     p3.textContent = arrayCars[a].reg + "  ";
                     p4.textContent = Fault;
-                    document.getElementsByTagName('body')[0].appendChild(p1);
-                    document.getElementsByTagName('body')[0].appendChild(p2);
-                    document.getElementsByTagName('body')[0].appendChild(p3);  
-                    document.getElementsByTagName('body')[0].appendChild(p4);
+                    document.getElementById("portfolio")[0].appendChild(p1);
+                    document.getElementById("portfolio")[0].appendChild(p2);
+                    document.getElementById("portfolio")[0].appendChild(p3);  
+                    document.getElementById("portfolio")[0].appendChild(p4);
                     let Make = arrayCars[a].make;
                     let Colour = arrayCars[a].colour;
                     let reg = arrayCars[a].reg;
@@ -62,16 +66,9 @@ function AddGarage()
                     option.innerHTML = arrayCars[a].reg;
                     document.getElementById("carListGarage").appendChild(option);
                 }
-                else 
-                {
-                    p4.textContent = Fault; 
-                    document.getElementsByTagName('body')[0].appendChild(p4);
-                    arrayGarage.push(Fault);
-                }
-
             }
         } 
-}
+
 
 function total()
 {
@@ -135,6 +132,7 @@ else {
 
 function OutGarage()
 {
+    document.getElementById("Total").value = "";                
     let List3 = document.getElementById("carListGarage");
     let CarReg2 = List3.options[List3.selectedIndex].value;
     let List = document.getElementById("carList");
@@ -149,7 +147,20 @@ function OutGarage()
         if (CarReg2.includes(arrayGarage[b].reg))
         {
             arrayGarage.splice(arrayGarage[b]);
-            document.getElementById('carListGarage').removeChild(reg);
+            let t = document.getElementById("carListOption");
+            t.remove(t.selectedIndex);
+            let s = document.getElementById("fault1").value;
+            document.getElementById("faultList").value = s;
+            let i = document.getElementById("carListGarage");
+            i.remove(i.selectedIndex);
+            let x = document.getElementById("para1");
+            x.remove(x.selectedIndex);
+            let z = document.getElementById("para2");
+            z.remove(z.selectedIndex);
+            let w = document.getElementById("para3");
+            w.remove(w.selectedIndex);
+            let v = document.getElementById("para4");
+            v.remove(v.selectedIndex);
         }
     }
 }
